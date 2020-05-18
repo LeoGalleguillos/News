@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class RootRelativeUrlTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->rootRelativeUrlService = new NewsService\Article\RootRelativeUrl(
             new StringService\UrlFriendly()

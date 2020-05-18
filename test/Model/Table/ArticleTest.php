@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class ArticleTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->articleTable = new NewsTable\Article($this->getAdapter());
 
